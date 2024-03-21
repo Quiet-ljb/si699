@@ -3,11 +3,10 @@ import numpy as np
 import pandas as pd
 
 
-def getVectors():
+def getVectors(data):
     model = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
-    train = pd.read_csv('train.csv')
 
-    tokens = list(train['token'])
+    tokens = list(data['token'])
 
     def vectorize(token):
         try:
