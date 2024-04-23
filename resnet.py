@@ -13,12 +13,12 @@ def res_block(x, unit1, unit2, activation1, activation2):
 
 
 if __name__ == "__main__":
-    train_X = np.load('/home/wushiyu/SI699/train_X.npy')
-    train_y = np.load('/home/wushiyu/SI699/train_y.npy')
-    validation_X = np.load('/home/wushiyu/SI699/validation_X.npy')
-    validation_y = np.load('/home/wushiyu/SI699/validation_y.npy')
-    test_X = np.load('/home/wushiyu/SI699/test_X.npy')
-    test_y = np.load('/home/wushiyu/SI699/test_y.npy')
+    train_X = np.load('train_X.npy')
+    train_y = np.load('train_y.npy')
+    validation_X = np.load('validation_X.npy')
+    validation_y = np.load('validation_y.npy')
+    test_X = np.load('test_X.npy')
+    test_y = np.load('test_y.npy')
 
     inputs = layers.Input(shape=((301,)))
     x = layers.Dense(2048, activation='relu')(inputs)
