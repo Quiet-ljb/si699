@@ -6,16 +6,16 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 
 
-train = pd.read_csv('/home/wushiyu/SI699/train_full.csv', lineterminator='\n')
-test = pd.read_csv('/home/wushiyu/SI699/test_full.csv', lineterminator='\n')
+train = pd.read_csv('train_full.csv', lineterminator='\n')
+test = pd.read_csv('test_full.csv', lineterminator='\n')
 
 encoder = LabelEncoder()
 onehot = OneHotEncoder()
 
 onehot.fit(np.array(encoder.fit_transform(train['label'])).reshape(-1, 1))
 
-train_pred = np.load('/home/wushiyu/SI699/resnet_train_full.npy')
-test_pred = np.load('/home/wushiyu/SI699/resnet_test_full.npy')
+train_pred = np.load('resnet_train_full.npy')
+test_pred = np.load('resnet_test_full.npy')
 
 train_pred = encoder.inverse_transform(onehot.inverse_transform(train_pred).reshape(1, -1)[0])
 test_pred = encoder.inverse_transform(onehot.inverse_transform(test_pred).reshape(1, -1)[0])
