@@ -16,6 +16,6 @@ The PII Dataset is available for non-commercial use only. Redistribution or modi
 Langdon Holmes, Scott Crossley, Perpetual Baffour, Jules King, Lauryn Burleigh, Maggie Demkin, Ryan Holbrook, Walter Reade, Addison Howard. (2024). The Learning Agency Lab - PII Data Detection. Kaggle. https://kaggle.com/competitions/pii-detection-removal-from-educational-data
 
 ### Contact Information
-For questions or additional information, please contact [Li jingbo@umich.edu \
+For questions or additional information, please contact [Jingbo Li jingbo@umich.edu \
 Shiyu Wu wushiyu@umich.edu \
 Yihan Jin russjin@umich.edu ].
